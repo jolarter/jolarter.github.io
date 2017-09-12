@@ -13,22 +13,25 @@ dataType: 'json'
 //var b = a.items[0].contentDetails.relatedPlaylists.uploads,
 chid = a.items[0].id,
 nekpag = '';
+
+var d = '';
+for(i=0;i<a.lenght;i++){
 var b = a.items[i].snippet.resourceId.videoId;
 getwaktu(b, i, g);
-var d = '';
 d += '<div class="col-md-2">'
 d += '<a href="#">'
 d += '</a><div class="ibacordotcom-play"><div class="ibacordotcom_youtube_thumb"><img src="' + c.items[i].snippet.thumbnails.default.url + '" alt="ibacor" class="preViewTube" /><span class="ibacordotcom-vid-tm' + i + '"></span></div>';
 d += c.items[i].snippet.title + '</div>'
 d += ''
 d += '</div>'
-});
-d += '</div>';
+}
 $('.ibacordotcom_youtube_channels').html(d);
+});
+/*
 if (c.prevPageToken == null) {
 var e = $(".ibacordotcom-play").attr("data-vvv");
 youtube_det(e, k, l, g)
-
+*/
 //youtube_video_list(b, apikey, nekpag, channels_title, chid, channels_name)
 };
 
