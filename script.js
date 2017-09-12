@@ -29,7 +29,7 @@ var e = $(".ibacordotcom-play").attr("data-vvv");
 youtube_det(e, k, l, g)
 
 //youtube_video_list(b, apikey, nekpag, channels_title, chid, channels_name)
-});
+};
 
 //Listamos todos los videos de nuestro canal de Youtube y creamos botones para ver mas videos del canal.
 function youtube_video_list(f, g, h, j, k, l) {
