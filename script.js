@@ -1,5 +1,5 @@
 //Agregar el nombre de nuestro Canal y la API de Google
-var channels_name='GoogleDevelopers', //Solo la parte del nombre de mi canal, Ejemplo: https://www.youtube.com/user/GoogleDevelopers
+var channels_name='UCVZc5giB1D4MoUr9RgcYGjw', //Solo la parte del nombre de mi canal, Ejemplo: https://www.youtube.com/user/GoogleDevelopers
 channels_title='Un titulo que quiera mostrar',
 apikey='AIzaSyDrELAnWOQx0xmMOOrRlMiGsLTzLxY3FD0'
 
