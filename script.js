@@ -31,41 +31,20 @@ d += '
 
 ';
 */
-d += 'Selecciona otro video para visualizarlo:
-';
+d += 'Selecciona otro video para visualizarlo:';
 d += '<i class="fa fa-fast-backward ibacordotcom_vid_prev" title="Videos anteriores"></i> ';
-d += '<i class="fa fa-fast-forward ibacordotcom_vid_next" title="Siguientes videos"></i>
-
-</div>
-<div class="ibacordotcom-vid-bottom">';
+d += '<i class="fa fa-fast-forward ibacordotcom_vid_next" title="Siguientes videos"></i></div><div class="ibacordotcom-vid-bottom">';
 $.each(c.items, function(i, a) {
 var b = c.items[i].snippet.resourceId.videoId;
 getwaktu(b, i, g);
-d += '
-<div class="col-md-2">'
+d += '<div class="col-md-2">'
 d += '<a href="#">'
-d += '
-</a>
-<div class="ibacordotcom-play">
-<div class="ibacordotcom_youtube_thumb"><img src="' + c.items[i].snippet.thumbnails.default.url + '" alt="ibacor" class="preViewTube" />
-<span class="ibacordotcom-vid-tm' + i + '"></span></div>
-';
-d += c.items[i].snippet.title + '
-
-</div>
-'
-d += '
-
-'
-d += '
-
-</div>
-'
+d += '</a><div class="ibacordotcom-play"><div class="ibacordotcom_youtube_thumb"><img src="' + c.items[i].snippet.thumbnails.default.url + '" alt="ibacor" class="preViewTube" /><span class="ibacordotcom-vid-tm' + i + '"></span></div>';
+d += c.items[i].snippet.title + '</div>'
+d += ''
+d += '</div>'
 });
-d += '
-
-</div>
-';
+d += '</div>';
 $('.ibacordotcom_youtube_channels').html(d);
 if (c.prevPageToken == null) {
 var e = $(".ibacordotcom-play").attr("data-vvv");
@@ -108,20 +87,11 @@ likd = a.items[0].statistics.dislikeCount,
 category = '',
 judul = a.items[0].snippet.localized.title,
 desc = a.items[0].snippet.localized.description;
-b += 'Ultimo Video subido:
-';
-b += '
-<div class="embed-responsive embed-responsive-4by3">'
+b += 'Ultimo Video subido:';
+b += '<div class="embed-responsive embed-responsive-4by3">'
 b += '';
-b += '</div>
-';
-b += '
-<div class="ibacordotcom-vid-box">
-<h3>' + judul + '</h3>
-
-<hr />
-
-';
+b += '</div>';
+b += '<div class="ibacordotcom-vid-box"><h3>' + judul + '</h3><hr />';
 /*
 b += '
 <div class="ibacordotcom-vid-box-user">
