@@ -25,7 +25,7 @@ d += c.items[i].snippet.title + '</div>'
 d += ''
 d += '</div>'
 }
-$('.ibacordotcom_youtube_channels').html(d);
+$('.snipets').html(d);
 });
 /*
 if (c.prevPageToken == null) {
