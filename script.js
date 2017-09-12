@@ -17,7 +17,7 @@ nekpag = '';
 var d = '';
 for(i=0;i<a.items.length;i++){
 var b = a.items[i].id.videoId;
-getwaktu(b, i, g);
+//getwaktu(b, i, g);
 d += '<div class="col-md-2">'
 d += '<a href="#">'
 d += '</a><div class="ibacordotcom-play"><div class="ibacordotcom_youtube_thumb"><img src="' + c.items[i].snippet.thumbnails.default.url + '" alt="ibacor" class="preViewTube" /><span class="ibacordotcom-vid-tm' + i + '"></span></div>';
