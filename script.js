@@ -6,28 +6,14 @@ apikey='AIzaSyDrELAnWOQx0xmMOOrRlMiGsLTzLxY3FD0'
 //Instanciamos nuestros videos con la API de Google.
 $.ajax({
 //url: 'https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forUsername=' + channels_name + '&key=' + apikey,
-url: 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=30&q=las+partes+que+me+parten+en+partes'+ '&key=' + apikey,
+url: 'https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCVZc5giB1D4MoUr9RgcYGjw&maxResults=100&q=las+partes+que+me+parten+en+partes'+ '&key=' + apikey,
 crossDomain: true,
 dataType: 'json'
 }).done(function(a) {
-var b = a.items[0].contentDetails.relatedPlaylists.uploads,
+//var b = a.items[0].contentDetails.relatedPlaylists.uploads,
 chid = a.items[0].id,
 nekpag = '';
-youtube_video_list(b, apikey, nekpag, channels_title, chid, channels_name)
-});
-
-//Listamos todos los videos de nuestro canal de Youtube y creamos botones para ver mas videos del canal.
-function youtube_video_list(f, g, h, j, k, l) {
-$.ajax({
-url: 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=' + f + '&key=' + g + '&pageToken=' + h,
-dataType: 'json'
-}).done(function(c) {
-var d = '';
-d += 'Selecciona otro video para visualizarlo:';
-d += '<i class="fa fa-fast-backward ibacordotcom_vid_prev" title="Videos anteriores"></i> ';
-d += '<i class="fa fa-fast-forward ibacordotcom_vid_next" title="Siguientes videos"></i></div><div class="ibacordotcom-vid-bottom">';
-$.each(c.items, function(i, a) {
-var b = c.items[i].snippet.resourceId.videoId;
+var b = a.items[i].snippet.resourceId.videoId;
 getwaktu(b, i, g);
 d += '<div class="col-md-2">'
 d += '<a href="#">'
@@ -41,6 +27,21 @@ $('.ibacordotcom_youtube_channels').html(d);
 if (c.prevPageToken == null) {
 var e = $(".ibacordotcom-play").attr("data-vvv");
 youtube_det(e, k, l, g)
+
+//youtube_video_list(b, apikey, nekpag, channels_title, chid, channels_name)
+});
+
+//Listamos todos los videos de nuestro canal de Youtube y creamos botones para ver mas videos del canal.
+function youtube_video_list(f, g, h, j, k, l) {
+$.ajax({
+url: 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=' + f + '&key=' + g + '&pageToken=' + h,
+dataType: 'json'
+}).done(function(c) {
+var d = '';
+d += 'Selecciona otro video para visualizarlo:';
+d += '<i class="fa fa-fast-backward ibacordotcom_vid_prev" title="Videos anteriores"></i> ';
+d += '<i class="fa fa-fast-forward ibacordotcom_vid_next" title="Siguientes videos"></i></div><div class="ibacordotcom-vid-bottom">';
+$.each(c.items, function(i, a) {
 }
 if (c.prevPageToken != null) {
 $('.ibacordotcom_vid_prev').click(function() {
