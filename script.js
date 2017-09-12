@@ -22,15 +22,6 @@ url: 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistI
 dataType: 'json'
 }).done(function(c) {
 var d = '';
-/*
-d += '
-<div class="ibacordotcom-vid-top"><span class="ibacordotcom-nav-title">' + j + '</span>
-<span class="ibacordotcom-vid-by">por <a href="http://www.youtube.com/user/' + l + '" target="_BLANK">' + l + '</a></span>
-
-<hr />
-
-';
-*/
 d += 'Selecciona otro video para visualizarlo:';
 d += '<i class="fa fa-fast-backward ibacordotcom_vid_prev" title="Videos anteriores"></i> ';
 d += '<i class="fa fa-fast-forward ibacordotcom_vid_next" title="Siguientes videos"></i></div><div class="ibacordotcom-vid-bottom">';
