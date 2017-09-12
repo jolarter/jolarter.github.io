@@ -15,7 +15,7 @@ chid = a.items[0].id,
 nekpag = '';
 
 var d = '';
-for(i=0;i<a.lenght;i++){
+for(i=0;i<a.items.lenght;i++){
 var b = a.items[i].snippet.resourceId.videoId;
 getwaktu(b, i, g);
 d += '<div class="col-md-2">'
