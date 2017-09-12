@@ -16,7 +16,7 @@ nekpag = '';
 
 var d = '';
 for(i=0;i<a.items.length;i++){
-var b = a.items[i].snippet.resourceId.videoId;
+var b = a.items[i].id.videoId;
 getwaktu(b, i, g);
 d += '<div class="col-md-2">'
 d += '<a href="#">'
