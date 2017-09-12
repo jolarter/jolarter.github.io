@@ -1,2 +1,0 @@
-# jolarter.github.io
-Page
