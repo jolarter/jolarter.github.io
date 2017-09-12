@@ -15,6 +15,7 @@ chid = a.items[0].id,
 nekpag = '';
 var b = a.items[i].snippet.resourceId.videoId;
 getwaktu(b, i, g);
+var d = '';
 d += '<div class="col-md-2">'
 d += '<a href="#">'
 d += '</a><div class="ibacordotcom-play"><div class="ibacordotcom_youtube_thumb"><img src="' + c.items[i].snippet.thumbnails.default.url + '" alt="ibacor" class="preViewTube" /><span class="ibacordotcom-vid-tm' + i + '"></span></div>';
