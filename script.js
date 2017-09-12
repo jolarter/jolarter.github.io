@@ -6,7 +6,7 @@ apikey='AIzaSyDrELAnWOQx0xmMOOrRlMiGsLTzLxY3FD0'
 //Instanciamos nuestros videos con la API de Google.
 $.ajax({
 //url: 'https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forUsername=' + channels_name + '&key=' + apikey,
-url: 'https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCVZc5giB1D4MoUr9RgcYGjw&maxResults=100&q=las+partes+que+me+parten+en+partes'+ '&key=' + apikey,
+url: 'https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCVZc5giB1D4MoUr9RgcYGjw&maxResults=50&q=las+partes+que+me+parten+en+partes'+ '&key=' + apikey,
 crossDomain: true,
 dataType: 'json'
 }).done(function(a) {
