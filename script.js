@@ -33,7 +33,7 @@ var e = $(".ibacordotcom-play").attr("data-vvv");
 youtube_det(e, k, l, g)
 */
 //youtube_video_list(b, apikey, nekpag, channels_title, chid, channels_name)
-};
+//};
 
 
 //Obtenemos detalles y la duración del video.
