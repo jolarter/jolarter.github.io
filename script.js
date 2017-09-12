@@ -1,7 +1,7 @@
 //Agregar el nombre de nuestro Canal y la API de Google
 var channels_name='GoogleDevelopers', //Solo la parte del nombre de mi canal, Ejemplo: https://www.youtube.com/user/GoogleDevelopers
 channels_title='Un titulo que quiera mostrar',
-apikey='API KEY'
+apikey='AIzaSyDrELAnWOQx0xmMOOrRlMiGsLTzLxY3FD0'
 
 //Instanciamos nuestros videos con la API de Google.
 $.ajax({
