@@ -20,8 +20,8 @@ var b = a.items[i].id.videoId;
 //getwaktu(b, i, g);
 d += '<div class="col-md-2">'
 d += '<a href="#">'
-d += '</a><div class="ibacordotcom-play"><div class="ibacordotcom_youtube_thumb"><img src="' + c.items[i].snippet.thumbnails.default.url + '" alt="ibacor" class="preViewTube" /><span class="ibacordotcom-vid-tm' + i + '"></span></div>';
-d += c.items[i].snippet.title + '</div>'
+d += '</a><div class="ibacordotcom-play"><div class="ibacordotcom_youtube_thumb"><img src="' + a.items[i].snippet.thumbnails.default.url + '" alt="ibacor" class="preViewTube" /><span class="ibacordotcom-vid-tm' + i + '"></span></div>';
+d += a.items[i].snippet.title + '</div>'
 d += ''
 d += '</div>'
 }
