@@ -18,12 +18,12 @@ var d = '';
 for(i=0;i<a.items.length;i++){
 var b = a.items[i].id.videoId;
 //getwaktu(b, i, g);
-d += '<div class="col-md-2">'
+d += '<span class="col-md-2">'
 d += '<a href="#">'
-d += '</a><div class="ibacordotcom-play"><div class="ibacordotcom_youtube_thumb"><img src="' + a.items[i].snippet.thumbnails.default.url + '" alt="ibacor" class="preViewTube" /><span class="ibacordotcom-vid-tm' + i + '"></span></div>';
-d += a.items[i].snippet.title + '</div>'
+d += '</a><span class="ibacordotcom-play"><span class="ibacordotcom_youtube_thumb"><img src="' + a.items[i].snippet.thumbnails.default.url + '" alt="ibacor" class="preViewTube" /><span class="ibacordotcom-vid-tm' + i + '"></span></span>';
+d += a.items[i].snippet.title + '</span>'
 d += ''
-d += '</div>'
+d += '</span>'
 }
 $('.snipets').html(d);
 });
